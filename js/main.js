@@ -24,6 +24,7 @@ window.addEventListener("load", function() {
 		    swal("Bien!", "Que comienze el juego " + inputValue, "success"); 
 			nombre.innerHTML = "Bienvenido " + inputValue;
 			cuadro.style.display = 'block';
+			location.href = "#abajo";
 		});
 		wall.style.display = 'none';
 

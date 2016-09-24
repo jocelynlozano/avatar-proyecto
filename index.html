@@ -13,40 +13,49 @@
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body>
-    <section>
-      <div class="colorfondo">
-        <div class="moviendotitulo">
-          <h1 class="ediciontitulo">Dress Up Doll</h1>
-        </div>
+    <header>
+      <div class="container-fluid colorfondo">
+        <h1 class="ediciontitulo">Dress Up Doll</h1>
         <button id="wall" class="btn btn-dangers claseboton">¿Quieres jugar?</button>
         <img  class="entrada1" src="img/entrada1.png" alt="fondogirl">
       </div>
-        <div class="container">          
-          <div id="nombre"></div>
+    </header>
+    <section class="colorfondo2">       
+        <div id="abajo" class="container-fluid">
+          <div class="">
+            <div id="nombre"></div>
           <div id="cuadro" style="display: none;">
-            <div id="cuadro1" class="col-md-2">
-              <div class="caja">
-                
-              </div>
-              <div class="caja">
-                
-              </div>
+            <div id="cuadro1" class="col-md-2 droptarget">
+                <img draggable="true" id="dragtarget" src="img/m1.png" alt="dollprincipall" height="100%"" width="100%">
             </div>
             <div id="cuadro2" class="col-md-6">
               <div class="cajaMayor">
               </div>
             </div>
             <div id="cuadro3" class="col-md-2">
-              <div class="caja">.col</div>
-              <div class="caja">.col</div>
-              <div class="caja">.col</div>
+              <div id="vestido" class="caja droptarget">
+                 <img draggable="true" id="dragtarget" src="img/blusa1.png" alt="ropa1" height="100%"" width="100%">
+              </div>
+              <div id="vestido" class="caja droptarget">
+                 <img draggable="true" id="dragtarget" src="img/vestido1.png" alt="ropa1" height="100%"" width="100%">
+              </div>
+              <div id="vestido" class="caja droptarget">
+                 <img draggable="true" id="dragtarget" src="img/vestido2.png" alt="ropa1" height="100%"" width="100%">
+              </div>
             </div>
             <div id="cuadro4" class="col-md-2">
-              <div class="caja">.col</div>
-              <div class="caja">.col</div>
-              <div class="caja">.col</div>
+              <div id="vestido" class="caja droptarget">
+                 <img draggable="true" id="dragtarget" src="img/vestido2.png" alt="ropa1" height="100%"" width="100%">
+              </div>
+              <div id="vestido" class="caja droptarget">
+                 <img draggable="true" id="dragtarget" src="img/vestido1.png" alt="ropa1" height="100%"" width="100%">
+              </div>
+              <div id="vestido" class="caja droptarget">
+                 <img draggable="true" id="dragtarget" src="img/vestido1.png" alt="ropa1" height="100%"" width="100%">
+              </div>
             </div>
           </div>
+          </div>        
         </div>
     </section>
     <script  type='text/javascript' src='js/jquery.min.js'></script>

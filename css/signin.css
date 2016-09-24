@@ -6,8 +6,7 @@
 
 .colorfondo {
 	background-color: #FF7FB8;
-	width: 1366px;
-    height: 645px;
+    height: 665px;
     margin-left: 0%;
     margin-top: -2%;
 }
@@ -15,7 +14,7 @@
 .entrada1 {
     width: 600px;
     height: 600px;
-	margin-top: -31%;
+	margin-top: -32%;
     margin-left: 55%;
 }
 
@@ -28,16 +27,16 @@
     font-family: 'Acme', sans-serif;
 }
 
-.moviendotitulo {
-
-}
-
 .ediciontitulo {
 	color: #FDE2C3;
 	font-family: 'Pacifico', cursive;
     margin-left: 185px;
     padding-top: 17%;
     font-size: 6em;
+}
+
+.colorfondo2 {
+	background-color: #FF7FB8;
 }
 
 .caja{
@@ -47,7 +46,10 @@
 	margin: 10px;
 }
 .cajaMayor  {
-	border: 1px solid black;
+    border: 9px solid #fcf8e3;
     height: 500px;
     margin: 5px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 117%;
 }
