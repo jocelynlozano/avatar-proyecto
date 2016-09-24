@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
 			if (inputValue === "") { 
 		    	swal.showInputError("Ups! Necesito saber tu nombre!");     
 		    	return false   }      
-		    swal("Bien!", "Hola " + inputValue, "success"); 
+		    swal("Bien!", "Que comienze el juego " + inputValue, "success"); 
 			nombre.innerHTML = "Bienvenido " + inputValue;
 			cuadro.style.display = 'block';
 		});
