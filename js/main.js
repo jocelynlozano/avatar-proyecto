@@ -24,9 +24,10 @@ window.addEventListener("load", function() {
 			if (inputValue === "") { 
 		    	swal.showInputError("Ups! Necesito saber tu nombre!");     
 		    	return false   }      
-		    swal("Bien!", "Hola " + inputValue, "success"); 
+		    swal("Bien!", "Que comienze el juego " + inputValue, "success"); 
 			nombre.innerHTML = "Bienvenido " + inputValue;
 			cuadro.style.display = 'block';
+			location.href = "#abajo";
 		});
 		wall.style.display = 'none';
 	});
@@ -40,31 +41,55 @@ window.addEventListener("load", function() {
 	})
 	cuadro2.addEventListener("drop", function(event){
 		event.preventDefault();
-		var imagen = event.dataTransfer.getData("text");
-		event.target.appendChild(document.getElementById(imagen))
+		var data= event.dataTransfer.getData("text");
+		event.target.appendChild(document.getElementById(data));
 		});
+	function carga(){
+    posicion=0;
+  vestido.addEventListener("mousedown",function(event){
+  comienzoMovimiento(event, id);
+})
+
+vestido.addEventListener("mouseover",function(event){
+  this.style.cursor='move'
+})
+
+}
+function evitaEventos(event){
+    // Funcion que evita que se ejecuten eventos adicionales
+    event.preventDefault();
+} 
+function comienzoMovimiento(event, id){
+    elMovimiento=document.getElementById(id);
+
+        cursorComienzoX=event.clientX+window.scrollX;
+        cursorComienzoY=event.clientY+window.scrollY;
+       
+        document.addEventListener("mousemove", enMovimiento, true);
+        document.addEventListener("mouseup", finMovimiento, true);
+   
+    elComienzoX=parseInt(elMovimiento.style.left);
+    elComienzoY=parseInt(elMovimiento.style.top);
+    // Actualizo el posicion del elemento
+    elMovimiento.style.zIndex=++posicion;
+
+    evitaEventos(event);
+}
+function enMovimiento(event){ 
+    var xActual, yActual;
+        xActual=event.clientX+window.scrollX;
+        yActual=event.clientY+window.scrollY;
+   
+    elMovimiento.style.left=(elComienzoX+xActual-cursorComienzoX)+"px";
+    elMovimiento.style.top=(elComienzoY+yActual-cursorComienzoY)+"px";
+ 
+    evitaEventos(event);
+}
+function finMovimiento(event){
+        document.removeEventListener("mousemove", enMovimiento, true);
+        document.removeEventListener("mouseup", finMovimiento, true);
+}
 
 });
 
-// /* Events fired on the drag target */
-// document.addEventListener("dragstart", function(event) {
-//     event.dataTransfer.setData("Text", event.target.id);
-// });
 
-// document.addEventListener("drag", function(event) {
-//     document.getElementById("demo").innerHTML = "The p element is being dragged";
-// });
-
-// /* Events fired on the drop target */
-// document.addEventListener("dragover", function(event) {
-//     event.preventDefault();
-// });
-
-// document.addEventListener("drop", function(event) {
-//     event.preventDefault();
-//     if ( event.target.className == "droptarget" ) {
-//         var data = event.dataTransfer.getData("Text");
-//         event.target.appendChild(document.getElementById(data));
-//         document.getElementById("demo").innerHTML = "The p element was dropped";
-//     }
-// });

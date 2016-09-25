@@ -1,10 +1,44 @@
-body{
-	background: url(../img/indie1.jpg);
-	background-size: 100%;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-/**{
-	text-align: center;
-}*/
+
+.colorfondo {
+	background-color: #FF7FB8;
+    height: 665px;
+    margin-left: 0%;
+    margin-top: -2%;
+}
+
+.entrada1 {
+    width: 600px;
+    height: 600px;
+	margin-top: -32%;
+    margin-left: 55%;
+}
+
+.claseboton {
+	margin-left: 25%;
+	margin-top: 4%;
+	background-color: #6B4831;
+    color: #FDE2C3 !important;
+    padding: 23px !important;
+    font-family: 'Acme', sans-serif;
+}
+
+.ediciontitulo {
+	color: #FDE2C3;
+	font-family: 'Pacifico', cursive;
+    margin-left: 185px;
+    padding-top: 17%;
+    font-size: 6em;
+}
+
+.colorfondo2 {
+	background-color: #FF7FB8;
+}
+
 .caja{
 	border: 1px solid black;
 	height: 100px;
@@ -12,7 +46,10 @@ body{
 	margin: 10px;
 }
 .cajaMayor  {
-	border: 1px solid black;
+    border: 9px solid #fcf8e3;
     height: 500px;
     margin: 5px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 117%;
 }
