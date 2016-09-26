@@ -66,7 +66,7 @@ window.addEventListener("load", function() {
         posicion=0;
         vestido.addEventListener("mousedown",function(event){
         comienzoMovimiento(event, id);
-        })
+        });
 
         vestido.addEventListener("mouseover",function(event){
         this.style.cursor='move'
