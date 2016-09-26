@@ -18,7 +18,7 @@ window.addEventListener("load", function() {
 			inputPlaceholder: "mi nombre es..." 
 		}, 
 		function(inputValue){ 
-
+			var nombre = document.getElementById("nombre");
 			if (inputValue === false) 
 				return false;      
 			if (inputValue === "") { 
@@ -26,6 +26,7 @@ window.addEventListener("load", function() {
 		    	return false   }      
 		    swal("Bien!", "Que comienze el juego " + inputValue, "success"); 
 			nombre.innerHTML = "Bienvenido " + inputValue;
+			nombre.classList.add("colorsito");
 			cuadro.style.display = 'block';
 			location.href = "#abajo";
 		});

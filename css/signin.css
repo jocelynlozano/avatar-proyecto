@@ -47,9 +47,23 @@
 }
 .cajaMayor  {
     border: 9px solid #fcf8e3;
-    height: 500px;
+    height: 748px;
     margin: 5px;
-    background-color: #fff;
+    width: 507px;
+    background-image: url(../img/fondo15.jpg);
     background-repeat: no-repeat;
-    background-size: 117%;
+    background-size: 100%;
+}
+
+.talladoll {
+    height: 70%;
+    width: 46%;
+    margin-left: 8%;
+    margin-top: 28%;
+}
+
+.colorsito {
+	font-size: 31px !important;
+    font-family: 'Acme', sans-serif !important;
+    color: #FDE2C3 !important;
 }
