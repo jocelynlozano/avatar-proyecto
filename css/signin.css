@@ -47,10 +47,12 @@
 }
 .cajaMayor  {
     border: 9px solid #fcf8e3;
-    height: 748px;
-    margin: 5px;
-    width: 507px;
-    background-image: url(../img/fondo15.jpg);
+    height: 609px;
+    margin: 14px;
+    margin-top: -15%;
+    margin-left: -3%;
+    width: 609px;
+    background-image: url(../img/prueba4.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -58,7 +60,7 @@
 .talladoll {
     height: 70%;
     width: 46%;
-    margin-left: 8%;
+    margin-left: 30%;
     margin-top: 28%;
 }
 
@@ -66,4 +68,12 @@
 	font-size: 31px !important;
     font-family: 'Acme', sans-serif !important;
     color: #FDE2C3 !important;
+}
+
+.edicionnombres {
+    font-family: 'Coming Soon', cursive;
+    text-align: center;
+    color: #6B4831;
+    margin-right: 12%;
+    margin-top: -1%;
 }
